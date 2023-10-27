@@ -5,27 +5,33 @@
 </head>
 <body>
     <h1>Client Information</h1>
-    <p>Client IP: {{ClientIP}}</p>
-    <p>Client User-Agent: {{ClientUA}}</p>
-    
-    <h2>Client IP Information</h2>
-    <p>IP Version: {{ClientIpInfo.IpVersion}}</p>
-    <p>IP Address: {{ClientIpInfo.IpAddress}}</p>
-    <p>Latitude: {{ClientIpInfo.Latitude}}</p>
-    <p>Longitude: {{ClientIpInfo.Longitude}}</p>
-    <p>Country Name: {{ClientIpInfo.CountryName}}</p>
-    <p>Country Code: {{ClientIpInfo.CountryCode}}</p>
-    <p>Time Zone: {{ClientIpInfo.TimeZone}}</p>
-    <p>Zip Code: {{ClientIpInfo.ZipCode}}</p>
-    <p>City Name: {{ClientIpInfo.CityName}}</p>
-    <p>Region Name: {{ClientIpInfo.RegionName}}</p>
-    <p>Continent: {{ClientIpInfo.Continent}}</p>
-    <p>Continent Code: {{ClientIpInfo.ContinentCode}}</p>
+    <ul>
+        <li>Client IP: {{ ClientIP }}</li>
+        <li>Status: {{ Status }}</li>
+        <li>Country: {{ Country }}</li>
+        <li>Country Code: {{ CountryCode }}</li>
+        <li>Region: {{ Region }}</li>
+        <li>Region Name: {{ RegionName }}</li>
+        <li>City: {{ City }}</li>
+        <li>Zip: {{ Zip }}</li>
+        <li>Lat: {{ Lat }}</li>
+        <li>Lon: {{ Lon }}</li>
+        <li>Timezone: {{ Timezone }}</li>
+        <li>ISP: {{ ISP }}</li>
+        <li>Org: {{ Org }}</li>
+        <li>AS: {{ AS }}</li>
+        <li>Query: {{ Query }}</li>
+        <li>Hostname: {{ Hostname }}</li>
+        <li>OS: {{ OS }}</li>
+        <li>Kernel Version: {{ KernelVersion }}</li>
+        <li>Memory: {{ Memory }}</li>
+        <li>Client User-Agent: {{ ClientUA }}</li>
+    </ul>
 
     <h1>Server Information</h1>
-    <p>Hostname: {{ServerInfo.Hostname}}</p>
-    <p>Operating System: {{ServerInfo.OS}}</p>
-    <p>Kernel Version: {{ServerInfo.KernelVersion}}</p>
-    <p>Memory: {{ServerInfo.Memory}}</p>
+    <ul>
+        <li>Server Info: {{ ServerInfo }}</li>
+        <li>Client IP Info: {{ ClientIpInfo }}</li>
+    </ul>
 </body>
 </html>
